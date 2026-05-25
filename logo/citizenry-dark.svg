@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" fill="none">
+  <defs>
+    <linearGradient id="gradStar" x1="360" y1="627" x2="894" y2="627" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#19DFFF"/>
+      <stop offset="0.36" stop-color="#2569FF"/>
+      <stop offset="0.62" stop-color="#7127FF"/>
+      <stop offset="1" stop-color="#DE10F8"/>
+    </linearGradient>
+
+    <linearGradient id="gradArcTL" x1="278" y1="510" x2="514" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#23DEFF"/>
+      <stop offset="0.48" stop-color="#2383FF"/>
+      <stop offset="1" stop-color="#5844FF"/>
+    </linearGradient>
+    <linearGradient id="gradArcTR" x1="740" y1="270" x2="978" y2="510" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8530FF"/>
+      <stop offset="0.55" stop-color="#B91DFF"/>
+      <stop offset="1" stop-color="#E42BE8"/>
+    </linearGradient>
+    <linearGradient id="gradArcBR" x1="745" y1="984" x2="978" y2="744" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#733BFF"/>
+      <stop offset="0.5" stop-color="#9D24FF"/>
+      <stop offset="1" stop-color="#E72DDF"/>
+    </linearGradient>
+    <linearGradient id="gradArcBL" x1="277" y1="744" x2="514" y2="984" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20DFFF"/>
+      <stop offset="0.55" stop-color="#256AFF"/>
+      <stop offset="1" stop-color="#6A4BFF"/>
+    </linearGradient>
+
+    <radialGradient id="gradCircleTop" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(627 230) rotate(45) scale(76)">
+      <stop offset="0" stop-color="#762BFF"/>
+      <stop offset="0.55" stop-color="#692BFF"/>
+      <stop offset="1" stop-color="#AD31FF"/>
+    </radialGradient>
+    <radialGradient id="gradCircleLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(235 627) rotate(45) scale(78)">
+      <stop offset="0" stop-color="#1B84FF"/>
+      <stop offset="0.55" stop-color="#18B7FF"/>
+      <stop offset="1" stop-color="#1CE6FF"/>
+    </radialGradient>
+    <radialGradient id="gradCircleRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 627) rotate(45) scale(78)">
+      <stop offset="0" stop-color="#B00DFF"/>
+      <stop offset="0.5" stop-color="#D40BF5"/>
+      <stop offset="1" stop-color="#EE34E2"/>
+    </radialGradient>
+    <radialGradient id="gradCircleBottom" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(627 1019) rotate(45) scale(78)">
+      <stop offset="0" stop-color="#5D36FF"/>
+      <stop offset="0.5" stop-color="#8528FF"/>
+      <stop offset="1" stop-color="#C20EF6"/>
+    </radialGradient>
+
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="17" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1.35 0 0 0 0  0 1.35 0 0 0  0 0 1.35 0 0  0 0 0 .8 0" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+      </feMerge>
+    </filter>
+    <filter id="glowArc" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="19" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1.6 0 0 0 0  0 1.45 0 0 0  0 0 1.65 0 0  0 0 0 .7 0"/>
+    </filter>
+  </defs>
+
+  <!-- Outer neon arc glows -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 506.3 257.4 A 389 389 0 0 0 256.7 506.8" stroke="url(#gradArcTL)" stroke-width="72" opacity="0.38" filter="url(#glowArc)"/>
+    <path d="M 747.7 257.4 A 389 389 0 0 1 997.3 506.8" stroke="url(#gradArcTR)" stroke-width="72" opacity="0.38" filter="url(#glowArc)"/>
+    <path d="M 997.3 747.2 A 389 389 0 0 1 747.7 996.6" stroke="url(#gradArcBR)" stroke-width="72" opacity="0.38" filter="url(#glowArc)"/>
+    <path d="M 256.7 747.2 A 389 389 0 0 0 506.3 996.6" stroke="url(#gradArcBL)" stroke-width="72" opacity="0.38" filter="url(#glowArc)"/>
+  </g>
+
+  <!-- Outer arc white rims -->
+  <g stroke="#FFFFFF" stroke-width="57" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 506.3 257.4 A 389 389 0 0 0 256.7 506.8"/>
+    <path d="M 747.7 257.4 A 389 389 0 0 1 997.3 506.8"/>
+    <path d="M 997.3 747.2 A 389 389 0 0 1 747.7 996.6"/>
+    <path d="M 256.7 747.2 A 389 389 0 0 0 506.3 996.6"/>
+  </g>
+
+  <!-- Outer arc gradient cores -->
+  <g stroke-width="43" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 506.3 257.4 A 389 389 0 0 0 256.7 506.8" stroke="url(#gradArcTL)"/>
+    <path d="M 747.7 257.4 A 389 389 0 0 1 997.3 506.8" stroke="url(#gradArcTR)"/>
+    <path d="M 997.3 747.2 A 389 389 0 0 1 747.7 996.6" stroke="url(#gradArcBR)"/>
+    <path d="M 256.7 747.2 A 389 389 0 0 0 506.3 996.6" stroke="url(#gradArcBL)"/>
+  </g>
+
+  <!-- Circle glows -->
+  <circle cx="627" cy="230" r="78" fill="url(#gradCircleTop)" opacity="0.43" filter="url(#glowSoft)"/>
+  <circle cx="235" cy="627" r="80" fill="url(#gradCircleLeft)" opacity="0.43" filter="url(#glowSoft)"/>
+  <circle cx="1020" cy="627" r="80" fill="url(#gradCircleRight)" opacity="0.43" filter="url(#glowSoft)"/>
+  <circle cx="627" cy="1019" r="80" fill="url(#gradCircleBottom)" opacity="0.43" filter="url(#glowSoft)"/>
+
+  <!-- Circles -->
+  <g stroke="#FFFFFF" stroke-width="8">
+    <circle cx="627" cy="230" r="65" fill="url(#gradCircleTop)"/>
+    <circle cx="235" cy="627" r="67" fill="url(#gradCircleLeft)"/>
+    <circle cx="1020" cy="627" r="67" fill="url(#gradCircleRight)"/>
+    <circle cx="627" cy="1019" r="67" fill="url(#gradCircleBottom)"/>
+  </g>
+
+  <!-- Central star glow -->
+  <path d="M 627 350
+           C 644 350 646 442 666 494
+           C 686 548 716 579 771 597
+           C 819 613 884 614 884 627
+           C 884 640 819 641 771 657
+           C 716 675 686 706 666 760
+           C 646 812 644 904 627 904
+           C 610 904 608 812 588 760
+           C 568 706 538 675 483 657
+           C 435 641 370 640 370 627
+           C 370 614 435 613 483 597
+           C 538 579 568 548 588 494
+           C 608 442 610 350 627 350 Z"
+        fill="url(#gradStar)" opacity="0.42" filter="url(#glowSoft)"/>
+
+  <!-- Central star -->
+  <path d="M 627 350
+           C 644 350 646 442 666 494
+           C 686 548 716 579 771 597
+           C 819 613 884 614 884 627
+           C 884 640 819 641 771 657
+           C 716 675 686 706 666 760
+           C 646 812 644 904 627 904
+           C 610 904 608 812 588 760
+           C 568 706 538 675 483 657
+           C 435 641 370 640 370 627
+           C 370 614 435 613 483 597
+           C 538 579 568 548 588 494
+           C 608 442 610 350 627 350 Z"
+        fill="url(#gradStar)" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+</svg>
